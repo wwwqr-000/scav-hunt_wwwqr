@@ -112,7 +112,7 @@ function renderForm($id, $naam, $opleiding, $wachtwoord, $isAdmin)
 				$piece = intval($size / 4);
 				$filter12 = "";
 				for ($i = 0; $i < $piece; $i++) {
-					$filter12 += $arr[$i];
+					$filter12 = $filter12  + $arr[$i];
 				}
 				echo $filter;
 				$opleiding = strtolower($txt);
