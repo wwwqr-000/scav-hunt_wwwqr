@@ -7,7 +7,7 @@
     <div class="credits">
       <p>All Rights Maybe Reserved</p>
       <p>Made by <a href="" target="_blank">Valerii, Wieger, Jonathan, Dimitry </a></p>
-      <p>( *Special event hosted and organized by the ROC Friese Poort )</p>
+      <p>*Special event hosted and organized by the ROC Friese Poort (Firda)</p>
     </div>
   </div>
 </footer><!-- End  Footer -->
