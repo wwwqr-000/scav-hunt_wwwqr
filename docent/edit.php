@@ -59,16 +59,14 @@ $ophalen = $conn->query("SELECT * FROM groep");
 											// use a while loop to fetch data
 											// from the $all_categories variable
 											// and individually display as an option
-											while ($klas_id = mysqli_fetch_array(
-												$KlassenID
-											)) :
-											?>
-												<option value="<?php echo $klas_id["id"];
-																// The value we usually set is the primary key
-																?>">
-												</option>
-											<?php
-											endwhile;
+											while ($klas_id = mysqli_fetch_array($KlassenID)) :
+												?>
+													<option value="<?php echo $klas_id["id"]; ?>">
+														<?php echo $klas_id["id"]; ?>
+													</option>
+												<?php
+												endwhile;
+												
 											// While loop must be terminated
 											?>
 										</select>
