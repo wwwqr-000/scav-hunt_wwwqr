@@ -6,6 +6,16 @@ echo <<<meta
 <meta>
 meta;
 ?>
+<style>
+  h2, h3, h4 {
+    text-align: center;
+  }
+  
+  p {
+    text-align: left;
+  }
+</style>
+
 
 <main id="main">
 
