@@ -111,7 +111,6 @@ echo '<div class="container">
       	die('Could not enter data: ');
    	}
    
-   	echo "Entered data successfully\n";
     header("Location: index.php");
  
  	}
