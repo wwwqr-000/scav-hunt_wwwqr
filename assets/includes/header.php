@@ -78,7 +78,10 @@ $path = "/~speurtocht/";
 						<?php session_start(); ?>
 					<nav id="navbar" class="nav-menu navbar">
 						<ul class="nav-menu">
-							<li><a href="<?php echo $path?>" class="nav-link scrollto hover-sound"><i class="bx bx-home"></i> Home</a></li>
+							<?php
+							echo '
+							<li><a href="' . $path . '" class="nav-link scrollto hover-sound"><i class="bx bx-home"></i> Home</a></li>
+							';?>
 							<?php
 							if (isset($_SESSION['docent'])) {
 								// echo <<< bar
