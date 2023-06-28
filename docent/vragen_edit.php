@@ -7,7 +7,7 @@ if (!isset($_SESSION['docent'])) {
 	header('location:../login');
 	die();
 }
-require_once("../assets/includes/header.php");
+
 require_once("../assets/includes/conn.php");
 ?>
 
@@ -160,4 +160,3 @@ $ophalen = $conn->query("SELECT * FROM vraag");
 	?>
 	</section>
 </section> <!-- End About Section -->
-<?php include "../assets/includes/footer.php" ?>

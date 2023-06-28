@@ -13,7 +13,7 @@ meta;
     <section id="about" class="section-50 d-flex flex-column align-items-center">
       <div class="container">
         <div class="row">
-          <div class="col-6">
+          <div class="col-12">
             <div class="block">
               <div class="content d-flex flex-column justify-content-center align-items-center sticked-header-offset">
                 <h2>Join the adventure today!</h2>
@@ -21,27 +21,6 @@ meta;
                   <img src="assets/img/Map-location.png" alt="Image" class="full-width-image">
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="col-2">
-            <div class="block">
-              <h2>Block 1</h2>
-              <p>You can do something, if u want to do so.</p>
-              <button>Go here</button>
-            </div>
-          </div>
-          <div class="col-2">
-            <div class="block">
-              <h2>Block 2</h2>
-              <p>Or maybe not.</p>
-              <button>Go there</button>
-            </div>
-          </div>
-          <div class="col-2">
-            <div class="block">
-              <h2>Block 3</h2>
-              <p>But who knows, yes?</p>
-              <button>Just go</button>
             </div>
           </div>
           <div class="col-12">
