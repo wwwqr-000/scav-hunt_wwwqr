@@ -1,5 +1,5 @@
 <?php
-$path = "//~speurtocht//";
+$path = "/~speurtocht/";
 ?>
 <!DOCTYPE html>
 <html lang="en">
