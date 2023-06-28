@@ -102,6 +102,7 @@ echo '<div class="container">
 		$pull = $conn->query("SELECT * FROM opleiding");
 		while ($row = $pull->fetch_assoc()) {
 			$txt = $row["opleiding_naam"];
+			echo $txt[0];
 			echo sizeof($txt);
 			$opleiding = strtolower($opleiding);
 			if (str_contains($opleiding, 'soft')) {
