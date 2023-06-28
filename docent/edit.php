@@ -54,22 +54,18 @@ $ophalen = $conn->query("SELECT * FROM groep");
 										$sql_klasid = "SELECT * FROM `leerling`";
 										$KlassenID = mysqli_query($conn, $sql_klasid);
 										?>
-										<select name="KlasID">
-											<?php
-											// use a while loop to fetch data
-											// from the $all_categories variable
-											// and individually display as an option
-											while ($klas_id = mysqli_fetch_array($KlassenID)) :
-												?>
-													<option value="<?php echo $klas_id["id"]; ?>">
-														<?php echo $klas_id["id"]; ?>
-													</option>
-												<?php
-												endwhile;
-												
-											// While loop must be terminated
-											?>
-										</select>
+										<select name="opleiding_ID">
+	<?php
+	while ($klas_id = mysqli_fetch_array($KlassenID)) :
+	?>
+		<option value="<?php echo $klas_id["id"]; ?>">
+			<?php echo $klas_id["id"]; ?>
+		</option>
+	<?php
+	endwhile;
+	?>
+</select>
+
 									</tr>
 									</td>
 								</table>
@@ -137,7 +133,7 @@ $ophalen = $conn->query("SELECT * FROM groep");
 								// generate error message
 								$error = 'ERROR: Please fill in all required fields!';
 								//error, display form
-								function renderForm($conn, $id, $naam, $opleiding_ID, $leerjaar, $groep_ID)
+								function renderForm($conn, $id, $naam, $opleiding_ID, $leerjaar, $groep_ID);
 							} else {
 								// save the data to the database
 								$sql_query = "UPDATE leerling SET naam='$naam', opleiding_ID='$opleiding_ID',leerjaar='$leerjaar',groep_ID='$groep_ID' WHERE id='$id'";
