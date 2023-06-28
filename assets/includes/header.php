@@ -94,7 +94,7 @@ $path = "~speurtocht/";
 								echo 		'<li><a href="/' . $path . 'docent/vragen-aanpassen.php"><i class="bx bx-edit"></i> Vragen bijwerken</a></li>';
 								echo 		'<li><a href="/' . $path . 'docent/unieke_code_generatie.php"><i class="bx bx-code"></i> Code genereren</a></li>';
 								if (isset($_SESSION['admin']))
-									echo	'<li><a href="/'. $path . '../admin/docent_toevoegen.php"><i class="bx bx-user"></i> Docent toevoegen</a></li>';
+									echo	'<li><a href="/'. $path . 'admin/docent_toevoegen.php"><i class="bx bx-user"></i> Docent toevoegen</a></li>';
 								echo 	'</ul>';
 								echo '</li>';
 								// echo '<li><a href="' . $path . 'login/logout.php"><i class="bx bx-user"></i> Uitloggen</a></li>';
