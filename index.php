@@ -65,7 +65,7 @@ meta;
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
       <div class="container">
         <br>
-        <p>( Special event organized by the ROC Friese Poort )</p>
+        <p style="text-align: center;">( Special event organized by the ROC Friese Poort )</p>
       </div>
     </section>
   </section> <!-- End About Section -->
