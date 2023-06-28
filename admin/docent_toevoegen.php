@@ -1,4 +1,5 @@
 <?php
+$doID = 0;
 require_once("../assets/includes/header.php");
 require_once("../assets/includes/conn.php");
 if (!isset($_SESSION['admin'])) {
@@ -99,18 +100,19 @@ echo '<div class="container">
  	}
  else
  	{//wwwqr~
+		
 		$pull = $conn->query("SELECT * FROM opleiding");
 		while ($row = $pull->fetch_assoc()) {
 			$txt = $row["opleiding_naam"];
 			$opleiding = strtolower($opleiding);
 			if (str_contains($opleiding, $txt)) {
-			   $opleiding = $row["ID"];
+				$doID = $row["ID"];
 			   break;
 			}
 		}
  	// save the data to the database
 
-	$sql_query = "INSERT INTO docent (naam, opleiding_ID, wachtwoord,isAdmin) VALUES ('$naam', '$opleiding', '$wachtwoord','$isAdmin')";
+	$sql_query = "INSERT INTO docent (naam, opleiding_ID, wachtwoord,isAdmin) VALUES ('$naam', '$doID', '$wachtwoord','$isAdmin')";
 
 
 	$retval = mysqli_query($conn, $sql_query );

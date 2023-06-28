@@ -581,9 +581,9 @@ section {
 
 .section-50 {
   width: 80%;
-  background-color: var(--color-grey-ultra-light);
+  /* background-color: var(--color-grey-ultra-light); */
   border-radius: 5vh;
-  box-shadow: inset 0 0 100px var(--color-secondary-ultra-light);
+  /* box-shadow: inset 0 0 100px var(--color-secondary-ultra-light); */
   text-align: center;
   align-items: center;
 }
@@ -593,7 +593,7 @@ section {
   padding: 20px;
   margin-bottom: 20px;
   border-radius: 2vh;
-  box-shadow: 0 0 20px var(--color-secondary-ultra-light);
+  /* box-shadow: 0 0 20px var(--color-secondary-ultra-light); */
   height: 100%;
 }
 
