@@ -113,7 +113,7 @@ function renderForm($id, $naam, $opleiding, $wachtwoord, $isAdmin)
 					$filter += $piece[$i];
 				}
 				$opleiding = strtolower($opleiding);
-				if (str_contains($opleiding, $txt)) {
+				if (str_contains($opleiding, $filter)) {
 					$doID = $row["ID"];
 					break;
 				}
