@@ -17,6 +17,10 @@ $path = "~speurtocht/";
 	<?php
 	echo '
 	<link href="/' . $path . 'assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+	<link rel="apple-touch-icon" sizes="180x180" href="/' . $path . 'assets/img/favicon_io/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/' . $path . 'assets/img/favicon_io/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/' . $path . 'assets/img/favicon_io/favicon-16x16.png">
+	<link rel="manifest" href="/' . $path . 'assets/img/favicon_io/site.webmanifest">
 	';
 	?>
 
