@@ -49,6 +49,7 @@ $ophalen = $conn->query("SELECT * FROM vraag");
 									</tr>
 									<tr>
 										<?php
+										/*
 										require_once("../assets/includes/conn.php");
 										// Get all the categories from category table
 										$sql_klasid = "SELECT * FROM vraag";
@@ -70,6 +71,7 @@ $ophalen = $conn->query("SELECT * FROM vraag");
 											<?php
 											endwhile;
 											// While loop must be terminated
+											*/
 											?>
 										</select>
 									</tr>
@@ -77,7 +79,7 @@ $ophalen = $conn->query("SELECT * FROM vraag");
 								</table>
 								<p>Everything is Required</p>
 
-								<input type="submit" name="submit" value="Wijzigen">Test
+								<input type="submit" name="submit" value="Wijzigen"/>
 
 							</div>
 
