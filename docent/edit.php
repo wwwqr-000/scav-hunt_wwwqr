@@ -12,8 +12,6 @@ include("../assets/includes/conn.php");
 
 $ophalen = $conn->query("SELECT * FROM groep");
 
-var_dump($conn);
-
 ?>
 
 <section class="about d-flex flex-column justify-content-center align-items-center sticked-header-offset" style="height: 100%;">
@@ -34,7 +32,7 @@ var_dump($conn);
 							<div>
 								<table border='1' cellpadding='10' width='100%'>
 									<tr>
-										ligma
+										ligma dimitry
 										<td><strong>Naam: </strong></td>
 										<td><input type='text' name='leerlingnummer' value='<?php echo $naam; ?>' /></td>
 									</tr>
