@@ -1,5 +1,6 @@
 <?php
 require_once("../assets/includes/header.php");
+require_once("../assets/includes/conn.php");
 function random() {
     return rand(1, 9);
 }

@@ -99,8 +99,11 @@ echo '<div class="container">
  	}
  else
  	{ 
+		$opleiding = strtolower($opleiding);
 		 if (str_contains($opleiding, 'soft')) {
-			# code...
+			$opleiding = 1;
+		 } else if (str_contains($opleiding, 'tim')) {
+			$opleiding = 2;
 		 }
  	// save the data to the database
 
