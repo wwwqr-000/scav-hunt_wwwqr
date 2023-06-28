@@ -44,7 +44,7 @@ $ophalen = $conn->query("SELECT * FROM vraag");
 										<td><input type='text' name='antwoord' value='<?php echo $antwoord; ?>' /></td>
 									</tr>
 									<tr>
-										<td><strong>Bij welke opleiding hoort de vraag: </strong></td>
+										<td><strong>Bij welke vragenlijst hoort de vraag: </strong></td>
 										<td><input type='text' name='vragenlijst_ID' value='<?php echo $vragenlijst_ID; ?>' /></td>
 									</tr>
 									<tr>
