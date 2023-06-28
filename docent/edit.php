@@ -8,12 +8,7 @@ if (!isset($_SESSION['docent'])) {
 	die();
 }
 require_once("../assets/includes/header.php");
-require_once("../assets/includes/conn.php");
-?>
-
-<!-- GROEPJES TABEL ALLES TONEN -->
-<?php
-require_once("../assets/includes/conn.php");
+include("../assets/includes/conn.php");
 
 $ophalen = $conn->query("SELECT * FROM groep");
 ?>

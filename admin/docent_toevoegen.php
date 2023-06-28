@@ -108,6 +108,10 @@ function renderForm($id, $naam, $opleiding, $wachtwoord, $isAdmin)
 				$arr = str_split($txt);
 				$size = sizeof($arr);
 				$piece = ($size / 4);
+				$filter = "";
+				for ($i = 0; $i < $piece; $i++) {
+					$filter += $piece[$i];
+				}
 				$opleiding = strtolower($opleiding);
 				if (str_contains($opleiding, $txt)) {
 					$doID = $row["ID"];
