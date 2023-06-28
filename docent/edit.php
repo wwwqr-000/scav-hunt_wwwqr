@@ -1,5 +1,4 @@
 <?php
-session_start();
 if (!isset($_SESSION['docent'])) {
     header('location:../login');
     die();
@@ -32,7 +31,6 @@ $ophalen = $conn->query("SELECT * FROM groep");
 							<div>
 								<table border='1' cellpadding='10' width='100%'>
 									<tr>
-										ligma dimitry
 										<td><strong>Naam: </strong></td>
 										<td><input type='text' name='leerlingnummer' value='<?php echo $naam; ?>' /></td>
 									</tr>
@@ -120,6 +118,7 @@ $ophalen = $conn->query("SELECT * FROM groep");
 			</div>
 		</div>';
 
+		
 					// check if the form has been submitted. If it has, process the form and save it to the database
 					if (isset($_POST['submit'])) {
 						if (is_numeric($_POST['id'])) {

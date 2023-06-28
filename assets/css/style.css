@@ -456,7 +456,7 @@ section {
 }
 
 .about input {
-  width: 300px;
+  width: auto;
   margin: 5px;
   padding: 5px;
   border: 1px solid var(--color-grey-light);
