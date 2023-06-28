@@ -606,8 +606,7 @@ section {
 }
 
 .full-width-image {
-  width: 30%;
-  object-fit: cover;
+  height: 100px;
 }
 
 select {

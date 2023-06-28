@@ -47,34 +47,6 @@ $ophalen = $conn->query("SELECT * FROM vraag");
 										<td><strong>Bij welke vragenlijst hoort de vraag: </strong></td>
 										<td><input type='text' name='vragenlijst_ID' value='<?php echo $vragenlijst_ID; ?>' /></td>
 									</tr>
-									<tr>
-										<?php
-										/*
-										require_once("../assets/includes/conn.php");
-										// Get all the categories from category table
-										$sql_klasid = "SELECT * FROM vraag";
-										$vraagID = mysqli_query($conn, $sql_klasid);
-										?>
-										<select name="vraagID">
-											<?php
-											// use a while loop to fetch data
-											// from the $all_categories variable
-											// and individually display as an option
-											while ($vraag_id = mysqli_fetch_array(
-												$vraagID
-											)) :
-											?>
-												<option value="<?php echo $vraag_id["id"];
-																// The value we usually set is the primary key
-																?>">
-												</option>
-											<?php
-											endwhile;
-											// While loop must be terminated
-											*/
-											?>
-										</select>
-									</tr>
 									</td>
 								</table>
 								<p>Everything is Required</p>
