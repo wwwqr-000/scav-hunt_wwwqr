@@ -94,7 +94,7 @@ echo '<div class="container">
  	// generate error message
  	$error = 'ERROR: Please fill in all required fields!';
  	// if either field is blank, display the form again
- 	renderForm($naam, $opleiding, $wachtwoord);
+ 	renderForm($id,$naam, $opleiding, $wachtwoord,$isAdmin);
 
  	}
  else
@@ -102,7 +102,7 @@ echo '<div class="container">
 		 
  	// save the data to the database
 
-	$sql_query = "INSERT INTO docent (naam, opleiding, wachtwoord,isAdmin) VALUES ('$naam', '$opleiding', '$wachtwoord','$isAdmin')";
+	$sql_query = "INSERT INTO docent (naam, opleiding_ID, wachtwoord,isAdmin) VALUES ('$naam', '$opleiding', '$wachtwoord','$isAdmin')";
 
 
 	$retval = mysqli_query($conn, $sql_query );
