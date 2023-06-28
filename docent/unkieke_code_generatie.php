@@ -17,7 +17,7 @@ echo '
     <title>Document</title>
 </head>
 <body>
-    <p>';
+    <p>Code: ';
     while ($row = $pull->fetch_assoc()) {echo $row["code"];}
     echo '
     </p>
