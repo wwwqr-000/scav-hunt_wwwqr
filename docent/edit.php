@@ -1,16 +1,19 @@
 <?php
 session_start();
 if (!isset($_SESSION['docent'])) {
-	header('location:../login');
-	die();
+    header('location:../login');
+    die();
 } elseif (!$_SESSION['docent']) {
-	header('location:../login');
-	die();
+    header('location:../login');
+    die();
 }
 require_once("../assets/includes/header.php");
 include("../assets/includes/conn.php");
 
 $ophalen = $conn->query("SELECT * FROM groep");
+
+var_dump($conn);
+
 ?>
 
 <section class="about d-flex flex-column justify-content-center align-items-center sticked-header-offset" style="height: 100%;">

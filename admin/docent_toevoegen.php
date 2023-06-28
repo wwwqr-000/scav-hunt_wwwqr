@@ -107,6 +107,7 @@ function renderForm($id, $naam, $opleiding, $wachtwoord, $isAdmin)
 				$txt = $row["opleiding_naam"];
 				$arr = str_split($txt);
 				$size = sizeof($arr);
+				echo "Size: " . $size . "<br>";
 				$piece = intval($size / 4);
 				$filter = "";
 				for ($i = 0; $i < $piece; $i++) {
