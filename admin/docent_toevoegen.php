@@ -99,7 +99,9 @@ echo '<div class="container">
  	}
  else
  	{ 
-		 
+		 if (str_contains($opleiding, 'soft')) {
+			# code...
+		 }
  	// save the data to the database
 
 	$sql_query = "INSERT INTO docent (naam, opleiding_ID, wachtwoord,isAdmin) VALUES ('$naam', '$opleiding', '$wachtwoord','$isAdmin')";

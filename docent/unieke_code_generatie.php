@@ -1,5 +1,5 @@
 <?php
-require_once("../assets/includes/conn.php");
+require_once("../assets/includes/header.php");
 function random() {
     return rand(1, 9);
 }
@@ -9,19 +9,14 @@ $code = 0;
 $pull = $conn->query("SELECT * FROM uniekecode WHERE ID = 1");
 //Laat code zien
 echo '
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <p>Code: ';
+<section class="about d-flex flex-column justify-content-center align-items-center sticked-header-offset" style="height: 100%;">
+	<section id="about" class="section-50 d-flex flex-column align-items-center">
+    <h3>Code: ';
     while ($row = $pull->fetch_assoc()) {echo $row["code"];}
     echo '
-    </p>
-</body>
-</html>
+    </h3>
+</section>
+</section>
 ';
+require_once("../assets/includes/footer.php");
 ?>

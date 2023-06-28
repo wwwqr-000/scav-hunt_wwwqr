@@ -92,7 +92,7 @@ $path = "~speurtocht/";
 								echo 		'<li><a href="/' . $path . 'docent/winnaar-tonen.php"><i class="bx bx-trophy"></i> Winnaar</a></li>';
 								echo 		'<li><a href="/' . $path . 'docent/koter_analyzer.php"><i class="bx bx-map"></i> Locaties</a></li>';
 								echo 		'<li><a href="/' . $path . 'docent/vragen-aanpassen.php"><i class="bx bx-edit"></i> Vragen bijwerken</a></li>';
-								echo 		'<li><a href="/' . $path . 'docent/unkieke_code_generatie.php"><i class="bx bx-code"></i> Code genereren</a></li>';
+								echo 		'<li><a href="/' . $path . 'docent/unieke_code_generatie.php"><i class="bx bx-code"></i> Code genereren</a></li>';
 								if (isset($_SESSION['admin']))
 									echo	'<li><a href="../admin/docent_toevoegen.php"><i class="bx bx-user"></i> Docent toevoegen</a></li>';
 								echo 	'</ul>';
