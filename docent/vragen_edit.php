@@ -77,7 +77,7 @@ $ophalen = $conn->query("SELECT * FROM vraag");
 								</table>
 								<p>Everything is Required</p>
 
-								<input type="submit" name="submit" value="Wijzigen">
+								<input type="submit" name="submit" value="Wijzigen">Test
 
 							</div>
 
