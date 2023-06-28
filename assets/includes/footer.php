@@ -5,9 +5,9 @@
         &copy; Copyright <strong><span>Friends Company & Firda 2023</span></strong>
       </div>
       <div class="credits">
-      <p>All Rights Maybe Reserved</p>
+      <p>All Rights Maybe Reserved
         Made by <a href="" target="_blank">Valerii, Wieger, Jonathan, Dimitry </a>
-        <p style="text-align: center;">( *Special event hosted and organized by the ROC Friese Poort )</p>
+        ( *Special event hosted and organized by the ROC Friese Poort )</p>
       </div>
     </div>
   </footer><!-- End  Footer -->
