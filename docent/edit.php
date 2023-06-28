@@ -31,6 +31,7 @@ $ophalen = $conn->query("SELECT * FROM groep");
 							<div>
 								<table border='1' cellpadding='10' width='100%'>
 									<tr>
+										ligma
 										<td><strong>Naam: </strong></td>
 										<td><input type='text' name='leerlingnummer' value='<?php echo $naam; ?>' /></td>
 									</tr>
@@ -138,7 +139,7 @@ $ophalen = $conn->query("SELECT * FROM groep");
 								// generate error message
 								$error = 'ERROR: Please fill in all required fields!';
 								//error, display form
-								renderForm($id, $naam, $opleiding_ID, $leerjaar, $groep_ID);
+								function renderForm($conn, $id, $naam, $opleiding_ID, $leerjaar, $groep_ID)
 							} else {
 								// save the data to the database
 								$sql_query = "UPDATE leerling SET naam='$naam', opleiding_ID='$opleiding_ID',leerjaar='$leerjaar',groep_ID='$groep_ID' WHERE id='$id'";
@@ -179,7 +180,9 @@ $ophalen = $conn->query("SELECT * FROM groep");
 							echo 'Error!';
 						}
 					}
+					mysqli_close($conn);
 	?>
 	</section>
 </section> <!-- End About Section -->
+
 <?php include "../assets/includes/footer.php" ?>
