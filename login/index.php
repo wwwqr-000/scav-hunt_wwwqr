@@ -1,5 +1,4 @@
 <?php
-session_start();
 $_SESSION['pagina'] = 'login';
 require_once("../assets/includes/header.php");
 
