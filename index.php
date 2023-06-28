@@ -43,9 +43,7 @@ meta;
             } ?>
           </div>
         </div>
-
-      </div>
-      <div class="block">
+        <!-- <div class="block">
           <div class="content d-flex flex-column justify-content-center align-items-center sticked-header-offset">
             <h2>Join the adventure today!</h2>
             <div class="image-container">
@@ -53,10 +51,11 @@ meta;
             </div>
           </div>
         </div>
+      </div> -->
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
       <div class="container">
         <br>
-        <p>Special event organized by the ROC Friese Poort</p>
+        <p>( Special event organized by the ROC Friese Poort )</p>
       </div>
     </section>
   </section> <!-- End About Section -->
