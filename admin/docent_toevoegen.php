@@ -98,13 +98,18 @@ echo '<div class="container">
 
  	}
  else
- 	{ 
-		$opleiding = strtolower($opleiding);
-		 if (str_contains($opleiding, 'soft')) {
-			$opleiding = 1;
-		 } else if (str_contains($opleiding, 'tim')) {
-			$opleiding = 2;
-		 }
+ 	{//wwwqr~
+		$pull = $conn->query("SELECT * FROM opleiding");
+		while ($row = $pull->fetch_assoc()) {
+			$txt = $row["opleiding_naam"];
+			sizeof($txt);
+			$opleiding = strtolower($opleiding);
+			if (str_contains($opleiding, 'soft')) {
+			   $opleiding = 1;
+			} else if (str_contains($opleiding, 'tim')) {
+			   $opleiding = 2;
+			}
+		}
  	// save the data to the database
 
 	$sql_query = "INSERT INTO docent (naam, opleiding_ID, wachtwoord,isAdmin) VALUES ('$naam', '$opleiding', '$wachtwoord','$isAdmin')";

@@ -12,10 +12,10 @@ $pull = $conn->query("SELECT * FROM uniekecode WHERE ID = 1");
 echo '
 <section class="about d-flex flex-column justify-content-center align-items-center sticked-header-offset" style="height: 100%;">
 	<section id="about" class="section-50 d-flex flex-column align-items-center">
-    <h3>Code: ';
+    <h1>Code: ';
     while ($row = $pull->fetch_assoc()) {echo $row["code"];}
     echo '
-    </h3>
+    </h1>
 </section>
 </section>
 ';
