@@ -1,4 +1,5 @@
 <?php
+session_start();
 $path = "~speurtocht/";
 ?>
 <!DOCTYPE html>
@@ -75,7 +76,6 @@ $path = "~speurtocht/";
 					</div>
 				</div>
 				<div class="col-md-9 vert">
-						<?php session_start(); ?>
 					<nav id="navbar" class="nav-menu navbar">
 						<ul class="nav-menu">
 							<?php
