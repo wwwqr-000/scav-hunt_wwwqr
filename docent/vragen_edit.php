@@ -51,7 +51,7 @@ $ophalen = $conn->query("SELECT * FROM vraag");
 										<?php
 										require_once("../assets/includes/conn.php");
 										// Get all the categories from category table
-										$sql_klasid = "SELECT * FROM `vraag`";
+										$sql_klasid = "SELECT * FROM vraag";
 										$vraagID = mysqli_query($conn, $sql_klasid);
 										?>
 										<select name="vraagID">
