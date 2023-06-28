@@ -45,7 +45,7 @@ $path = "/~speurtocht/";
 </head>
 
 <body>
-	<div id="box"> <?php include_once("" . $path . "/filedir.php") ?> </div>
+	<div id="box"> <?php include_once("" . $path . "filedir.php") ?> </div>
 	<i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
 
 	<div class="header-box"></div>
