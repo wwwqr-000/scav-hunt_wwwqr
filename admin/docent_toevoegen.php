@@ -104,6 +104,7 @@ function renderForm($id, $naam, $opleiding, $wachtwoord, $isAdmin)
 		} else { //wwwqr~
 			$pull = $conn->query("SELECT * FROM opleiding");
 			while ($row = $pull->fetch_assoc()) {
+				echo "ja";//debug
 				$txt = $row["opleiding_naam"];
 				$arr = str_split($txt);
 				$size = sizeof($arr);
