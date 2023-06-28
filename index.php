@@ -13,15 +13,6 @@ meta;
     <section id="about" class="section-50 d-flex flex-column align-items-center">
       <div class="container">
 
-        <div class="block">
-          <div class="content d-flex flex-column justify-content-center align-items-center sticked-header-offset">
-            <h2>Join the adventure today!</h2>
-            <div class="image-container">
-              <img src="assets/img/Map-location.png" alt="Image" class="full-width-image">
-            </div>
-          </div>
-        </div>
-
         <div class="col-12">
           <div class="full-width-block">
             <?php
@@ -54,6 +45,14 @@ meta;
         </div>
 
       </div>
+      <div class="block">
+          <div class="content d-flex flex-column justify-content-center align-items-center sticked-header-offset">
+            <h2>Join the adventure today!</h2>
+            <div class="image-container">
+              <img src="assets/img/Map-location.png" alt="Image" class="full-width-image">
+            </div>
+          </div>
+        </div>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
       <div class="container">
         <br>
