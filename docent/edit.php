@@ -18,7 +18,7 @@ $ophalen = $conn->query("SELECT * FROM groep");
 	<section id="about" class="section-50 d-flex flex-column align-items-center">
 		<div class="container">
 			<div class="row">
-				<div class="col-6">
+				<div class="col-12">
 					<?php
 					/* docenten_edit.PHP
 		Allows user to edit specific entry in database
