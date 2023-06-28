@@ -1,5 +1,5 @@
 <?php
-session_start();
+
 if (!isset($_SESSION['docent'])) {
     header('location:../login');
     die();
@@ -9,7 +9,7 @@ if (!isset($_SESSION['docent'])) {
 }
 require_once("../assets/includes/header.php");
 include("../assets/includes/conn.php");
-
+session_start();
 $ophalen = $conn->query("SELECT * FROM groep");
 
 ?>
