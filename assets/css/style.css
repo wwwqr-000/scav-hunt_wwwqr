@@ -36,8 +36,8 @@
   --color-grey-dark: rgb(44, 49, 63);
   scroll-behavior: smooth;
 }
+
 body {
-  background: var(--color-default);
   font-family: "Open Sans", sans-serif;
   color: black;
 }
@@ -233,6 +233,7 @@ h6 {
 }
 
 @media (max-width: 1199px) {
+
   /* Styles made by Valerii Kozhevets */
   #header {
     left: -1200px;
@@ -354,7 +355,6 @@ h6 {
 .nav-menu .active:focus i,
 .nav-menu li:hover>a i {
   color: var(--color-secondary-red);
-  text-shadow: 0 0 20px var(--color-secondary-light);
 }
 
 /* Style the dropdown menu */
@@ -428,8 +428,8 @@ h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
-  overflow: hidden;
+  padding: 40px 0;
+  overflow: auto;
   background: var(--color-grey-ultra-light);
 }
 
@@ -558,12 +558,12 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  padding: 20px;
-  color: var(--color-secondary-light);
+  padding: 30px;
+  color: var(--color-grey);
   font-size: 14px;
   left: 0;
   bottom: 0;
-  height: 150px;
+  height: auto;
   width: auto;
   z-index: 9999;
   background: var(--color-default);
@@ -588,7 +588,8 @@ section {
   align-items: center;
 }
 
-.block, .full-width-block {
+.block,
+.full-width-block {
   background-color: white;
   padding: 20px;
   margin-bottom: 20px;
@@ -619,7 +620,7 @@ select {
   height: 25vw;
   overflow: hidden;
   background: var(--color-secondary-ultra-light);
-  
+
 }
 
 table {
@@ -677,6 +678,7 @@ td {
 .scrollable::-webkit-scrollbar-thumb:hover {
   background-color: var(--color-secondary);
 }
+
 #ul {
   flex-wrap: wrap;
 }

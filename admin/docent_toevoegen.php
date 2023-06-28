@@ -1,4 +1,5 @@
 <?php
+ob_start();
 $doID = 0;
 require_once("../assets/includes/header.php");
 require_once("../assets/includes/conn.php");
@@ -100,7 +101,6 @@ echo '<div class="container">
  	}
  else
  	{//wwwqr~
-		
 		$pull = $conn->query("SELECT * FROM opleiding");
 		while ($row = $pull->fetch_assoc()) {
 			$txt = $row["opleiding_naam"];
@@ -131,4 +131,6 @@ echo '<div class="container">
  	{
  	renderForm('','','','','');
  	}
-require_once("../assets/includes/footer.php"); ?>
+require_once("../assets/includes/footer.php"); 
+ob_end_flush();
+?>
