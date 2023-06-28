@@ -63,7 +63,10 @@ $path = "/~speurtocht/";
 
 				<div class="col-md-2">
 					<div class="profile">
-						<h1 class="text-light"><a href="<?php echo $path?>">Scav Hunt</a></h1>
+						<?php
+						echo '
+						<h1 class="text-light"><a href="' . $path . '">Scav Hunt</a></h1>
+						';?>
 						<div class="social-links mt-3 text-center">
 							<a href="" target="_blank"><i class="fa fa-info" aria-hidden="true"></i></a>
 							<a href="" target="_blank"><i class="fa fa-address-book" aria-hidden="true"></i></a>
