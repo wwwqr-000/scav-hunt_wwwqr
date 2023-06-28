@@ -109,7 +109,7 @@ function renderForm($id, $naam, $opleiding, $wachtwoord, $isAdmin)
 				echo "Arr: " . print_r($arr) . "<br>";
 				$size = sizeof($arr);
 				echo "Size: " . $size . "<br>";
-				$piece = intval($size / 4);
+				$piece = 2;
 				$filter12 = "";
 				for ($i = 0; $i < $piece; $i++) {
 					$filter12 = $filter12  + $arr[$i];
