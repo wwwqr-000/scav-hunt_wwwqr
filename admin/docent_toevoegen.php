@@ -1,5 +1,5 @@
 <?php
-ob_start();
+//ob_start();
 $doID = 0;
 require_once("../assets/includes/header.php");
 require_once("../assets/includes/conn.php");
@@ -145,5 +145,5 @@ function renderForm($id, $naam, $opleiding, $wachtwoord, $isAdmin)
 	</section>
 	<?php
 	require_once("../assets/includes/footer.php");
-	ob_end_flush();
+	//ob_end_flush();
 	?>
