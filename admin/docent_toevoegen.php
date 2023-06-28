@@ -114,6 +114,7 @@ function renderForm($id, $naam, $opleiding, $wachtwoord, $isAdmin)
 				for ($i = 0; $i < $piece; $i++) {
 					$filter = $arr[$i];
 				}
+				echo $filter;
 				$opleiding = strtolower($txt);
 				if (str_contains($opleiding, $filter)) {
 					$doID = $row["ID"];
