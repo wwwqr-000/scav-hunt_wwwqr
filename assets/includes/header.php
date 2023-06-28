@@ -104,15 +104,11 @@ $path = "~speurtocht/";
 								echo '<li><a href="/' . $path . 'student_code.php" class="nav-link scrollto hover-sound"><i class="bx bx-user"></i> Student login</a></li>';
 							}
 							?>
-							<?php
-							echo '
-							<li><a href="/' . $path . 'about.php" class="nav-link scrollto hover-sound"><i class="bx bx-user"></i> About</a></li>
-							';
-							echo '
+							
+							<!-- <li><a href="/' . $path . 'about.php" class="nav-link scrollto hover-sound"><i class="bx bx-user"></i> About</a></li> -->
 						</ul>
 					</nav>
 				</div>
 			</div>
 		</div>
 	</header>
-	';
