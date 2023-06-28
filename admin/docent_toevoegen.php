@@ -106,6 +106,7 @@ function renderForm($id, $naam, $opleiding, $wachtwoord, $isAdmin)
 			while ($row = $pull->fetch_assoc()) {
 				$txt = $row["opleiding_naam"];
 				$arr = str_split($txt);
+				echo "Arr: " . print_r($arr) . "<br>";
 				$size = sizeof($arr);
 				echo "Size: " . $size . "<br>";
 				$piece = intval($size / 4);
