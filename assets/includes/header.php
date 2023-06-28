@@ -85,7 +85,7 @@ $path = "/~speurtocht/";
 							<?php
 							if (isset($_SESSION['docent'])) {
 								// echo <<< bar
-								echo '<li><a href="<?php echo $path?>docent/"><i class="bx bx-user"></i> Docent</a></li>';
+								echo '<li><a href="' . $path . 'docent/"><i class="bx bx-user"></i> Docent</a></li>';
 								echo '<li class="dropdown"><a href="#"><i class="bx bx-user"></i> Beheren <i class="bx bx-chevron-down"></i></a>';
 								echo 	'<ul>';
 								echo 		'<li><a href="' . $path . 'docent/groepje-tonen.php"><i class="bx bx-group"></i> Groepjes</a></li>';
