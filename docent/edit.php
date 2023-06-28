@@ -112,7 +112,7 @@ var_dump($conn);
 					}
 
 					// connect to the database
-					require_once("../assets/includes/conn.php");
+					// require_once("../assets/includes/conn.php");
 
 					echo '
 		<div class="container">

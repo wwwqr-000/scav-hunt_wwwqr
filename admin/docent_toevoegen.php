@@ -104,7 +104,7 @@ function renderForm($id, $naam, $opleiding, $wachtwoord, $isAdmin)
 		} else { //wwwqr~
 			$pull = $conn->query("SELECT * FROM opleiding");
 			while ($row = $pull->fetch_assoc()) {
-				$txt = $row["opleiding_naam"];
+				$txt = $opleiding;
 				$arr = str_split($txt);
 				echo "Arr: " . print_r($arr) . "<br>";
 				$size = sizeof($arr);
@@ -115,7 +115,7 @@ function renderForm($id, $naam, $opleiding, $wachtwoord, $isAdmin)
 					echo $piece[$i];
 					//$filter += $piece[$i];
 				}
-				$opleiding = strtolower($opleiding);
+				$opleiding = strtolower($txt);
 				if (str_contains($opleiding, $filter)) {
 					$doID = $row["ID"];
 					break;
