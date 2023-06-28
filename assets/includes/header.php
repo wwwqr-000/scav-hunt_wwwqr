@@ -99,7 +99,7 @@ $path = "~speurtocht/";
 								echo '</li>';
 								// echo '<li><a href="' . $path . 'login/logout.php"><i class="bx bx-user"></i> Uitloggen</a></li>';
 								// bar;
-							} else if (isset($_SESSION['pagina']) && $_SESSION['pagina'] == 'home') {
+							} else if (!isset($_SESSION['pagina']) && $_SESSION['pagina'] == 'home') {
 								echo '<li><a href="/' . $path . 'login" class="nav-link scrollto hover-sound"><i class="bx bx-user"></i> Docent login</a></li>';
 								echo '<li><a href="/' . $path . 'student_code.php" class="nav-link scrollto hover-sound"><i class="bx bx-user"></i> Student login</a></li>';
 							}
